@@ -2,7 +2,7 @@
 name = "proj-sys"
 description = "Rust bindings for PROJ v6.2.x"
 repository = "https://github.com/urschrei/proj-sys"
-version = "0.11.1"
+version = "0.11.2"
 readme = "README.md"
 authors = ["Stephan Hügel <urschrei@gmail.com>"]
 keywords = ["proj", "projection", "osgeo", "geo", "geospatial"]
@@ -16,6 +16,7 @@ bindgen = "0.51.0"
 
 [features]
 docs-rs = []
+fallback-bindings = []
 
 [package.metadata.docs.rs]
 features = [ "docs-rs" ] # This feature will be enabled during the docs.rs build

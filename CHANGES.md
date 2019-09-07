@@ -1,3 +1,6 @@
+# 0.11.2
+- Fall back to pre-generated bindings on docs.rs
+
 # 0.11.1
 - Fixed link to function references
 

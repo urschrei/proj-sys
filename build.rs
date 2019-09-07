@@ -31,4 +31,9 @@ fn main() {
     bindings
         .write_to_file(out_path.join("bindings.rs"))
         .expect("Couldn't write bindings!");
+    // we're doing this so docs.rs can build the library
+    let backup_out_path = PathBuf::from(r"src");
+    bindings
+        .write_to_file(backup_out_path.join("bindings.rs"))
+        .expect("Couldn't write bindings!");
 }
